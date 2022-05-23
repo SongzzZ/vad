@@ -1,0 +1,1 @@
+python "../train2evaluate.py" --dataset_type ped2 --budget 8 --epochs 5

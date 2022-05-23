@@ -1,0 +1,1 @@
+python "../train2evaluate.py" --dataset_type avenue --SelAD --budget 1 --epochs 10

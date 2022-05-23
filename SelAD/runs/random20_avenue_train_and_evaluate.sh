@@ -1,0 +1,1 @@
+python "../train2evaluate.py" --dataset_type avenue --epochs 5 --topk 3

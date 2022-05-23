@@ -1,0 +1,1 @@
+python "../train2evaluate.py" --dataset_type shanghaitech --budget 8 --epochs 5

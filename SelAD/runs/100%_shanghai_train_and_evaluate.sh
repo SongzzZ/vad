@@ -1,0 +1,1 @@
+python "../train2evaluate.py" --dataset_type shanghaitech --doselection False --budget 1 --epochs 10

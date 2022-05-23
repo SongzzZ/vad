@@ -41,7 +41,7 @@ def eval_p(itr, dataset, predict_dict, logger, save_path, args, plot=False, zip=
             normal_predict_np = np.concatenate((normal_predict_np, v.repeat(16)))
             normal_label_np = np.concatenate((normal_label_np, frame_labels[:len(v.repeat(16))]))
 
-    all_auc_score = roc_auc_score(y_true=all_label_np, y_score=all_predict_np)+0.01
+    all_auc_score = roc_auc_score(y_true=all_label_np, y_score=all_predict_np)
     binary_all_predict_np = scorebinary(all_predict_np, threshold=0.5)
     tn, fp, fn, tp = confusion_matrix(y_true=all_label_np, y_pred=binary_all_predict_np).ravel()
     all_ano_false_alarm = fp / (fp + tn)

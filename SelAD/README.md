@@ -1,4 +1,4 @@
-# PyTorch implementation of "AAS-SelAD"
+# PyTorch implementation of "SelAD"
 
 <p align="center"><img src="./figs/intro_v2.jpg" alt="no_image" width="60%" />
 

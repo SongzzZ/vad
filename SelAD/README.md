@@ -3,7 +3,7 @@
 <p align="center"><img src="./figs/intro_v2.jpg" alt="no_image" width="60%" />
 
 
-This is the implementation of the paper "Video Anomaly Detection with Training Data Sample Selection and Multi-Memory U-Net".
+This is the implementation of the paper "Pseudo-Abnormal Sample Selection Driven Learning for Video Anomaly Detection".
 
 
 ## Dependencies

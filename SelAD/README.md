@@ -21,6 +21,8 @@ These datasets are from an official github of "Future Frame Prediction for Anoma
 
 Download the datasets into ``datasets`` folder, like ``./dataset/ped2/``
 
+Use the script ``./dataset/to_frame.py`` to process videos data into image sequence.
+
 ## Training and evaluating
 * The training and testing codes are based on frame prediction method
 ```bash

@@ -29,4 +29,4 @@ Use the script ``./dataset/to_frame.py`` to process videos data into image seque
 cd SelAD/runs
 xx.sh for the corresponding results 
 ```
-We also provide our model in the follow [link](https://pan.baidu.com/s/1dph2O99JNmRwavNyTImztg), extraction ocde: op6k
+We also provide our model in the follow [link]([link: https://pan.baidu.com/s/1dph2O99JNmRwavNyTImztg  password: op6k]) ).

@@ -20,7 +20,7 @@ Download the [i3d features]([link: https://pan.baidu.com/s/1Cn1BDw6EnjlMbBINkbxH
 if you want to extract Visual Feature like this project, you can clone this project([https://github.com/wanboyang/anomaly_feature])
 
 
-## training @ evaluation
+## training & evaluation
 we train and evaluate our model in the same process：
 
 ```

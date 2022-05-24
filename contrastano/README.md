@@ -1,11 +1,11 @@
 # 基于代表片段对比学习的视频异常检测
 
 ## Requirements
-* Python3
+* Python 3.8
+* PyTorch 1.8.0+cu111
+* Numpy
 * CUDA
-* numpy
 * tqdm
-* [PyTorch](http://pytorch.org/) (1.2)
 * [torchvision](http://pytorch.org/)  
 Recommend: the environment can be established by running
 

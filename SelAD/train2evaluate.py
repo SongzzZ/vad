@@ -355,7 +355,7 @@ if __name__ == "__main__":
     anomaly_score_total_list = []
     for video in sorted(videos_list):
         video_name = video.split('/')[-1]
-        anomaly_score_total_list += score_sum(anomaly_score_list(psnr_list[video_name]))
+        anomaly_score_total_list += score_sum(anomaly_score_list(psnr_list[video_name]),anomaly_score_list(psnr_list[video_name]),1)
 
     anomaly_score_total_list = np.asarray(anomaly_score_total_list)
     # np.save("train2eval.npy", anomaly_score_total_list)

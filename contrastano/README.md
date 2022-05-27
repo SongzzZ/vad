@@ -28,5 +28,3 @@ python main.py --model_name model_sad --Lambda 1_20
 ```
 
 the above script can complete the training and testing procedure of our model. Specifically, ``--Lambda 1_20`` means $\lambda_1 = 1$ and $\lambda_2 = 20$.
-
-We also provide our [model]([link: https://pan.baidu.com/s/1ne7IUPDtUgjpfY8zGOsOnA  password: dj6e]) in the link, where the model is saved per 200 epochs during training.

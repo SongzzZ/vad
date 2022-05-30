@@ -244,9 +244,10 @@ if __name__ == "__main__":
                 topk = heapq.nsmallest(dataset_size//(2*args.divide), range(len(score)), score.__getitem__)
                 idx = [selection_indices[i] for i in topk]
             elif args.topk == 2:
-                topk = heapq.nsmallest(dataset_size//(2*args.divide), range(len(score)), score.__getitem__)
+                topk = heapq.largest(dataset_size//(2*args.divide), range(len(score)), score.__getitem__)
                 idx = [selection_indices[i] for i in topk]
             elif args.topk == 3:
+                topk = random.sample(dataset_size//(2*args.divide), range(len(score)), score.__getitem__)
                 idx = [selection_indices[i] for i in topk] 
             else:
                 print("Invalid selection strategy, reset to top-k")

@@ -37,5 +37,6 @@ parser.add_argument('--larger_mem', type=int, default=0, help='')
 parser.add_argument('--snapshot', type=int, default=200, help='anomaly sample threshold')
 # parser.add_argument('--ps', type=str, default='normal_loss_mean')
 parser.add_argument('--label_type', type=str, default='unary')
+parser.add_argument('--dataset_type', type=str, default='shanghaitech', help='shanghaitech or ucf-crime')
 
 

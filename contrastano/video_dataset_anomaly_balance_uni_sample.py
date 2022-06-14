@@ -30,12 +30,12 @@ class dataset(Dataset):
         self.feature_pretrain_model = args.feature_pretrain_model
         if self.feature_pretrain_model == 'c3d' or self.feature_pretrain_model == 'c3d_ucf':
             self.feature_layer = args.feature_layer
-            self.feature_path = os.path.join(self.dataset_path, 'features_video',
+            self.feature_path = os.path.join(self.dataset_path,self.dataset_name, 'features_video',
                                              self.feature_pretrain_model, self.feature_layer, self.feature_modal) # removed self.dataset_name
         else:
-            self.feature_path = os.path.join(self.dataset_path, 'features_video',
+            self.feature_path = os.path.join(self.dataset_path, self.dataset_name,'features_video',
                                              self.feature_pretrain_model, self.feature_modal)
-#            self.feature_path = os.path.join(self.dataset_path, 'features_video',
+#            self.feature_path = os.path.join(self.dataset_path, self.dataset_name,'features_video',
 #                                             self.feature_pretrain_model, self.feature_modal)
                                              
         self.videoname = os.listdir(self.feature_path)
@@ -46,10 +46,10 @@ class dataset(Dataset):
             self.testlist = self.txt2list(testlist)
         else:
             self.trainlist = self.txt2list(
-                txtpath=os.path.join(self.dataset_path, 'train_split.txt')) # removed , self.dataset_name
-            self.testlist = self.txt2list(txtpath=os.path.join(self.dataset_path, 'test_split.txt')) # removed , self.dataset_name
+                txtpath=os.path.join(self.dataset_path, self.dataset_name,'train_split.txt')) # removed , self.dataset_name
+            self.testlist = self.txt2list(txtpath=os.path.join(self.dataset_path, self.dataset_name,'test_split.txt')) # removed , self.dataset_name
         self.video_label_dict = self.pickle_reader(
-            file=os.path.join(self.dataset_path, 'GT', 'video_label.pickle'))# removed , self.dataset_name
+            file=os.path.join(self.dataset_path, self.dataset_name,'GT', 'video_label.pickle'))# removed , self.dataset_name
         self.normal_video_train, self.anomaly_video_train = self.p_n_split_dataset(self.video_label_dict, self.trainlist)
         self.train = train
         self.t_max = args.max_seqlen

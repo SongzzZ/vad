@@ -24,7 +24,7 @@ if you want to extract Visual Feature like this project, you can clone this proj
 we train and evaluate our model in the same process：
 
 ```
-python main.py --model_name model_sad --Lambda 1_20
+python main.py --dataset_name shanghaitech --model_name model_sad --Lambda 1_20
 ```
 
 the above script can complete the training and testing procedure of our model. Specifically, ``--Lambda 1_20`` means $\lambda_1 = 1$ and $\lambda_2 = 20$.

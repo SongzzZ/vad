@@ -19,7 +19,7 @@ if __name__ == '__main__':
     torch.cuda.set_device(args.device)
     time = datetime.datetime.now()
 
-    save_path = os.path.join(args.dataset_type, args.model_name, args.feature_pretrain_model, args.dataset_name, 'k_{}'.format(args.k), '_Lambda_{}'.format(args.Lambda), args.feature_modal, '{}{:02d}{:02d}{:02d}{:02d}{:02d}'.format(time.year, time.month, time.day, time.hour,time.minute, time.second))
+    save_path = os.path.join(args.dataset_name, args.model_name, args.feature_pretrain_model, args.dataset_name, 'k_{}'.format(args.k), '_Lambda_{}'.format(args.Lambda), args.feature_modal, '{}{:02d}{:02d}{:02d}{:02d}{:02d}'.format(time.year, time.month, time.day, time.hour,time.minute, time.second))
 
     model = model_generater(model_name=args.model_name, feature_size=args.feature_size).to(device)
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=0.0005)
